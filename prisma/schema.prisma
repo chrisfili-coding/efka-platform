@@ -5,6 +5,7 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -12,7 +13,6 @@ generator client {
 datasource db {
   provider  = "postgresql"
 }
-        
 
 // MODELS
 
@@ -76,5 +76,16 @@ model AuditLog {
   @@map("audit_logs")
 }
 
+enum Role {
+  CLIENT
+  EMPLOYEE
+  ADMIN
+}
 
+enum VirusScanStatus {
+  PENDING
+  CLEAN
+  INFECTED
+  FAILED
+}
 
