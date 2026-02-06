@@ -77,17 +77,4 @@ model AuditLog {
 }
 
 
-// ENUMS
 
-enum Role {
-  CLIENT
-  EMPLOYEE
-  ADMIN
-}
-
-enum VirusScanStatus {
-  PENDING
-  CLEAN
-  INFECTED
-  FAILED
-}
